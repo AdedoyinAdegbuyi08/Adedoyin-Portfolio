@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1000;
+}
+.hamburger {
+    display: block;
+    background: none;
+    color: #280b0f;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+}
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    background: #280b0f;
+    list-style: none;
+    padding: 20px;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    color: #c6b39a;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-links.active {
+    display: flex;
+}
+.nav-links a {
+    pointer-events: auto;
+}
