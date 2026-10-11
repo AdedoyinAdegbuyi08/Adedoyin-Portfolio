@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c6b39a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    width: 100%;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.portfolio-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18vw;
+    font-weight: 900;
+    color: #280b0f;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.signature {
+    position: absolute;
+    width: 1000px;
+    max-width: 200%;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-2deg);
+    z-index: 2;
+}
+@media (max-width: 768px) {
+    .signature {
+        width: 150%;
+        top: 51%;
+    }
+}
+@media (max-width: 480px) {
+    .signature {
+        width: 120%;
+        top: 51%;
+    }
+}
