@@ -1,3 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+html, body {
+    max-width: 100%; overflow-x: hidden;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -13,13 +23,14 @@ nav {
     border: none;
     font-size: 50px;
     cursor: pointer;
+    position: relative;
 }
 .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
-    right: 40px;
+    right: 120px;
     background: #280b0f;
     list-style: none;
     padding: 20px;
@@ -39,4 +50,34 @@ nav {
 }
 .nav-links a {
     pointer-events: auto;
+}
+@media (max-width: 768px) {
+    .hamburger {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 1000;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .hamburger {
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+        z-index: 1000;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
 }
