@@ -41,12 +41,12 @@ body {
 @media (max-width: 768px) {
     .signature {
         width: 150%;
-        top: 51%;
+        top: 45%;
     }
 }
 @media (max-width: 480px) {
     .signature {
         width: 120%;
-        top: 51%;
+        top: 35%;
     }
 }
