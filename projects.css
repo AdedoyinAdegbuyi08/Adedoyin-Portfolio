@@ -17,7 +17,10 @@ body {
     left: 92%;
 }
 .routeng {
-    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
 }
 .first {
