@@ -24,7 +24,7 @@ body {
     font-weight: 900;
     color: #280b0f;
     position: absolute;
-    top: 35%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -33,15 +33,69 @@ body {
     position: absolute;
     width: 1000px;
     max-width: 200%;
-    top: 36%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-2deg);
     z-index: 2;
+}
+.navbar {
+    position: relative;
+    background: #280b0f;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 1.25rem 0;
+}
+.nav-links a {
+    color: #c6b39a;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #280b0f;
+    font-size: 2.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     .signature {
         width: 150%;
         top: 45%;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        background: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 0;
+        background: #3b0d14;
+        z-index: 999;
+        box-shadow: 0 8px 24px rgba (0, 0, 0, 0.35);
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .nav-links a {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.15rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 }
 @media (max-width: 480px) {
