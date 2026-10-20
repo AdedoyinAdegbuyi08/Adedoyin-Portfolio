@@ -4,28 +4,11 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("images/contactback.png");
+    background-image: url("images/contact-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-/*nav {
-    display: flex;
-    justify-content: space-around;
-    background: #280b0f;
-    color: #c6b39a;
-    align-items: center;
-    padding: 20px 40px;
-}
-.link {
-    text-decoration: none;
-    color: #c6b39a;
-}*/
-/*.navigation {
-    position: fixed;
-    bottom: 85%;
-    left: 92%;
-}*/
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
